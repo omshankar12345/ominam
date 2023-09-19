@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/Clicklogin.dart';
 
 class LoginPage extends StatelessWidget {
+  var namecontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,6 +13,7 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
+              controller: namecontroller,
               decoration: InputDecoration(
                   hintText: 'Enter your gmail account ',
                   border: OutlineInputBorder(
